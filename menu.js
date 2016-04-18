@@ -1,30 +1,19 @@
 // begin with a blank/new order
 var order = '';
+var toppings = '';
 
 
 // build a function to ask questions
 
-function question(questionText) {
-    var ansInput = prompt (questionText)
-    
+function question() {
   // your code goes here
-if (ansInput === yes){
-  order = order +  mainFood + ansInput
+    order = prompt("What would you like to order? burrito bowl tacos?");
+    toppings = prompt("What meat toppings would you like? steak carnitas chicken barbacoa sofritas");
+        toppings = prompt("What rice or veggie topping would you like?");
 }
-  
-}
-order = "mainFood"
 
 // call the QUESTION function with the order options
-question("would you like some lettuce?");
-order +  order + ansInput
-question("would you like some salsa?");
-order +  order + ansInput
-question("would you like some tomato?");
-order +  order + ansInput
-question("would you like some rice?");
-order +  order + ansInput
-
+question();
 
 // output their order
-document.write("<p>You ordered: " + order + "<p>");
+document.write("<p>You ordered a " + order + " with " + toppings + "<p>");
