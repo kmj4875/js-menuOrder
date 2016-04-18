@@ -9,7 +9,7 @@ function question(questionText,) {
     
   // your code goes here
 if (ansInput === yes){
-  order = ""
+  order = order +  mainFood + ansInput
 }
   
 }
