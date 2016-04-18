@@ -4,7 +4,7 @@ var order = '';
 
 // build a function to ask questions
 
-function question(questionText,) {
+function question(questionText) {
     var ansInput = prompt (questionText)
     
   // your code goes here
